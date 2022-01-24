@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import LanguageSelector from '../components/LanguageSelector';
 import MainPage from '../components/LanguageMainPage';
 import LanguagesService from '../services/LanguagesServices';
-
+import Container from 'react-bootstrap/esm/Container';
 
 const LanguagesContainer = () => {
     
@@ -27,7 +27,7 @@ const goMainPage = () =>{
   
     return (
   <>
-<div className='main-container'>
+<Container fluid='md' className='main-container'>
         
     <div className='lang-image-container'>   
         {!selectedLanguage ? <LanguageSelector allData={allData} onClickLanguage={onClickLanguage}/> : null}
@@ -36,7 +36,7 @@ const goMainPage = () =>{
         {selectedLanguage ? <MainPage  selectedLanguage={selectedLanguage}/> : null }
 
     </div>
-</div>
+</Container>
   </>
   );
 };
