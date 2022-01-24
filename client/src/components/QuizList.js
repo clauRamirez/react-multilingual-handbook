@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import QuizButton from './QuizButton';
+import Quiz from './Quiz';
 
  const QuizList = ({quizzes}) => {
 
@@ -16,7 +17,7 @@ const quizButtonNodes = quizzes.map((quiz, index) => {
   return (
     <div>
         {!selectedQuiz ? quizButtonNodes : null}
-        {/* {selectedQuiz ? <Quiz quiz={selectedQuiz} /> : null} */}
+        {selectedQuiz ? <Quiz quiz={selectedQuiz} /> : null}
 
     </div>
   );
