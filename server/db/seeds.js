@@ -208,19 +208,44 @@ db.languages.insertMany(
                     ]
                 }
             ],
-            "quizz": [
+            "quizzes": [
                 {
-                    "question": "How are you?",
-                    "answers": [
+                    "id": 1,
+                    "difficulty": "Easy",
+                    "quiz": [
                         {
+                            "question": "How are you?",
+                            "answers": [
+                            {
                             "text": "Como te llamas?",
                             "isCorrect": false
-                        },
-                        {
+                            },
+                            {
                             "text": "Como estas?",
                             "isCorrect": true
+                            }
+                            ]
                         }
-                    ]
+                    ]  
+                },
+                {
+                    "id": 2,
+                    "difficulty": "Medium",
+                    "quiz": [
+                        {
+                            "question": "How are you?",
+                            "answers": [
+                            {
+                            "text": "Como te llamas?",
+                            "isCorrect": false
+                            },
+                            {
+                            "text": "Como estas?",
+                            "isCorrect": true
+                            }
+                            ]
+                        }
+                    ]  
                 }
             ]
         },
@@ -430,19 +455,44 @@ db.languages.insertMany(
                     ]
                 }
             ],
-            "quizz": [
+            "quizzes": [
                 {
-                    "question": "How are you?",
-                    "answers": [
+                    "id": 1,
+                    "difficulty": "Easy",
+                    "quiz": [
                         {
-                            "text": "Ako viete?",
-                            "isCorrect": false
-                        },
-                        {
-                            "text": "Ako sa máš?",
-                            "isCorrect": true
+                            "question": "How are you?",
+                            "answers": [
+                                {
+                                    "text": "Ako viete?",
+                                    "isCorrect": false
+                                },
+                                {
+                                    "text": "Ako sa máš?",
+                                    "isCorrect": true
+                                }
+                            ]
                         }
-                    ]
+                    ]  
+                },
+                {
+                    "id": 2,
+                    "difficulty": "Medium",
+                    "quiz": [
+                        {
+                            "question": "How are you?",
+                            "answers": [
+                                {
+                                    "text": "Ako viete?",
+                                    "isCorrect": false
+                                },
+                                {
+                                    "text": "Ako sa máš?",
+                                    "isCorrect": true
+                                }
+                            ]
+                        }
+                    ]  
                 }
             ]
         },
@@ -652,19 +702,44 @@ db.languages.insertMany(
                     ]
                 }
             ],
-            "quizz": [
+            "quizzes": [
                 {
-                    "question": "How are you?",
-                    "answers": [
+                    "id": 1,
+                    "difficulty": "Easy",
+                    "quiz": [
                         {
-                            "text": "Haben Sie Ihren Wellensittich verloren?",
-                            "isCorrect": false
+                            "question": "How are you?",
+                            "answers": [
+                                {
+                                "text": "Haben Sie Ihren Wellensittich verloren?",
+                                "isCorrect": false
                         },
                         {
                             "text": "Wie geht es Ihnen?",
                             "isCorrect": true
+                                }
+                            ]
                         }
-                    ]
+                    ]  
+                },
+                {
+                    "id": 2,
+                    "difficulty": "Medium",
+                    "quiz": [
+                        {
+                            "question": "How are you?",
+                            "answers": [
+                                {
+                                    "text": "Haben Sie Ihren Wellensittich verloren?",
+                                    "isCorrect": false
+                                },
+                                {
+                                    "text": "Wie geht es Ihnen?",
+                                    "isCorrect": true
+                                }
+                            ]
+                        }
+                    ]  
                 }
             ]
         }
