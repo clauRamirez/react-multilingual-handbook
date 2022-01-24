@@ -1,9 +1,13 @@
 import React from 'react';
 
-export const Topic = ({topic}) => {
+export const Topic = ({topic, onTopicClick}) => {
+
+  const handleClick = () => {
+    onTopicClick(topic)
+  }
   return (
     <div>
-    <p>{topic.name}</p>
+    <p onClick={handleClick} >{topic.name}</p>
     </div>
     );
 };

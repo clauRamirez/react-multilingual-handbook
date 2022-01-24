@@ -4,15 +4,20 @@ import Topic from './Topic';
  const TopicsList = ({topics}) => {
 const [selectedTopic,setSelectedTopic] = useState(null)
     
+const onTopicClick = (topic) => {
+  setSelectedTopic(topic)
+}
+
 const topicNodes = topics.map(topic => {
-        console.log(topic)
-        return <Topic topic ={topic}  />
+        return <Topic topic = {topic} onTopicClick={onTopicClick} />
 
     })
 
   return (
     <div>
-        {topicNodes}
+        {!selectedTopic ? topicNodes : null}
+        {selectedTopic ? <Topic topic={selectedTopic} /> : null}
+
     </div>
   );
 };
