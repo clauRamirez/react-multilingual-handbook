@@ -28,7 +28,7 @@ const goMainPage = () =>{
     return (
   <>
 <div className='main-container'>
-
+        
     <div className='lang-image-container'>   
         {!selectedLanguage ? <LanguageSelector allData={allData} onClickLanguage={onClickLanguage}/> : null}
     </div>
