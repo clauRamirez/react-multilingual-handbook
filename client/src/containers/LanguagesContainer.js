@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LanguageSelector from '../components/LanguageSelector';
-import MainPage from '../components/MainPage';
+import MainPage from '../components/LanguageMainPage';
 import LanguagesService from '../services/LanguagesServices';
 
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LanguageMainPageButtons from './LanguageMainPageButtons';
 import Quiz from './Quiz';
 import TopicsList from './TopicsList';
 
@@ -15,14 +16,9 @@ const MainPage = ({selectedLanguage}) => {
         return (
     <div className='home-page-container'>
     
-        <button value={null} onClick={handleClick}></button>
+    <button value={null} onClick={handleClick}></button>
+    {!selectedComponent ? <LanguageMainPageButtons handleClick={handleClick}/> : null}
         
-        <button value="topics" onClick={handleClick}>Topics</button>
-        <button value="quiz" onClick={handleClick} >Quizz</button>
-    
-
-    
-
     {selectedComponent === "quiz" ? <Quiz quizes ={selectedLanguage.quiz}/> : null }
     {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
     
