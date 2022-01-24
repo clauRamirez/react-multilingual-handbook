@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Topic = ({topic, onTopicClick}) => {
+export const TopicButton = ({topic, onTopicClick}) => {
 
   const handleClick = () => {
     onTopicClick(topic)
@@ -12,4 +12,4 @@ export const Topic = ({topic, onTopicClick}) => {
     );
 };
 
-export default Topic;
+export default TopicButton;

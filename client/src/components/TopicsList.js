@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Topic from './Topic';
+import TopicButton from './TopicButton';
 
  const TopicsList = ({topics}) => {
 const [selectedTopic,setSelectedTopic] = useState(null)
@@ -8,15 +8,15 @@ const onTopicClick = (topic) => {
   setSelectedTopic(topic)
 }
 
-const topicNodes = topics.map(topic => {
-        return <Topic topic = {topic} onTopicClick={onTopicClick} />
+const topicButtonNodes = topics.map((topic, index) => {
+        return <TopicButton key={index} topic = {topic} onTopicClick={onTopicClick} />
 
     })
 
   return (
     <div>
-        {!selectedTopic ? topicNodes : null}
-        {selectedTopic ? <Topic topic={selectedTopic} /> : null}
+        {!selectedTopic ? topicButtonNodes : null}
+        {/* {selectedTopic ? <Topic topic={selectedTopic} /> : null} */}
 
     </div>
   );
