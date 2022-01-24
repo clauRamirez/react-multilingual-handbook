@@ -15,7 +15,7 @@ const LanguageSelector = ({allData,onClickLanguage}) => {
   <div>
     
     {imageNodes}
-  </div>
+  </div> 
   );
 };
 export default LanguageSelector;
