@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import TopicButton from './TopicButton';
+import Topic from './Topic';
 
  const TopicsList = ({topics}) => {
 const [selectedTopic,setSelectedTopic] = useState(null)
@@ -16,7 +17,7 @@ const topicButtonNodes = topics.map((topic, index) => {
   return (
     <div>
         {!selectedTopic ? topicButtonNodes : null}
-        {/* {selectedTopic ? <Topic topic={selectedTopic} /> : null} */}
+        {selectedTopic ? <Topic topic={selectedTopic} /> : null}
 
     </div>
   );
