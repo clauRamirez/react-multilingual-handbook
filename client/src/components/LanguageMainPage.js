@@ -21,7 +21,13 @@ const MainPage = ({selectedLanguage}) => {
         {selectedComponent === "quiz" ? <QuizList quizzes ={selectedLanguage.quizzes}/> : null }
         {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
         
-        <img src={selectedLanguage.image}/>
+  
+
+
+
+
+
+  
         
         </div>
     );
