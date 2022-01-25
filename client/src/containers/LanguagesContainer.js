@@ -31,13 +31,9 @@ const goMainPage = () =>{
   
 <Container fluid='md' className='main-container'>
         
-    <div className='lang-image-container'>   
         {!selectedLanguage ? <LanguageSelector allData={allData} onClickLanguage={onClickLanguage}/> : null}
-    </div>
-    <div className='main-page-container'> 
         {selectedLanguage ? <MainPage  selectedLanguage={selectedLanguage}/> : null }
 
-    </div>
 </Container>
  
   );
