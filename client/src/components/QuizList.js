@@ -5,9 +5,18 @@ import Quiz from './Quiz';
  const QuizList = ({quizzes}) => {
 
   const [selectedQuiz, setSelectedQuiz] = useState(null)
-  const onQuizClick = (quiz) => {
-  setSelectedQuiz(quiz)
+  const [currentQuiz,setCurrentQuiz] = useState(0)
+  
+      const onQuizClick = (quiz) => {
+        setSelectedQuiz(quiz)
+    } 
+
+
+  const onClickNextQuiz = ()=>{
+    setCurrentQuiz(currentQuiz + 1)
 }
+
+
 
 const quizButtonNodes = quizzes.map((quiz, index) => {
         return <QuizButton key={index} quiz = {quiz} onQuizClick={onQuizClick} />
@@ -17,7 +26,7 @@ const quizButtonNodes = quizzes.map((quiz, index) => {
   return (
     <div>
         {!selectedQuiz ? quizButtonNodes : null}
-        {selectedQuiz ? <Quiz quiz={selectedQuiz} /> : null}
+        {selectedQuiz ? <Quiz quiz={selectedQuiz} currentQuiz ={currentQuiz} onClickNextQuiz={onClickNextQuiz}/> : null}
 
     </div>
   );
