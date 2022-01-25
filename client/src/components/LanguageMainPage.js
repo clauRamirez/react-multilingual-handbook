@@ -14,20 +14,16 @@ const MainPage = ({selectedLanguage}) => {
         
         
         return (
-    <div className='home-page-container'>
+        <div className='home-page-container'>
     
-    <button value={null} onClick={handleClick}></button>
-    {!selectedComponent ? <LanguageMainPageButtons handleClick={handleClick}/> : null}
+        <button value={null} onClick={handleClick}></button>
+        {!selectedComponent ? <LanguageMainPageButtons handleClick={handleClick}/> : null}
+        {selectedComponent === "quiz" ? <QuizList quizzes ={selectedLanguage.quizzes}/> : null }
+        {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
         
-    {selectedComponent === "quiz" ? <QuizList quizzes ={selectedLanguage.quizzes}/> : null }
-    {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
-    
-
-
-    <img src={selectedLanguage.image}/>
-    
-   
-    </div>
+        <img src={selectedLanguage.image}/>
+        
+        </div>
     );
 };
 
