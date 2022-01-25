@@ -40,7 +40,7 @@
   text-align: center;
   background-color: whitesmoke;
 }
-.country-list {
+.flex-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

@@ -12,7 +12,7 @@ const LanguageSelector = ({allData,onClickLanguage}) => {
 
 
     return( 
-  <div className='country-list'>
+  <div className='flex-wrap'>
     
     {imageNodes}
   </div> 
