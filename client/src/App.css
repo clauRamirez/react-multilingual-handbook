@@ -1,1 +1,20 @@
+.App {
+  max-width: 60vw;
+  min-height: 80vh;
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  box-shadow: 3px 1px 12px#929191;
+  background: url("backgroundPic.jpg");
+  /* background-attachment: fixed; */
+  background-position: 50% bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.card {
+  color: rebeccapurple;
+}

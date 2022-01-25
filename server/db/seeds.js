@@ -7,7 +7,7 @@ db.languages.insertMany([
         name: "Spanish",
         originalName: "Español",
         text: "With 480 million native speakers, Spanish ranks as the world's No. 2 language in terms of how many people speak it as their first language!",
-        image: "URL TO IMAGE",
+        image: "https://images.pexels.com/photos/8298825/pexels-photo-8298825.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
         topics: [
             {
                 name: "Travel",
@@ -448,8 +448,8 @@ db.languages.insertMany([
         id: "sk",
         name: "Slovak",
         originalName: "Slovenčina ",
-        text: "You'll need to learn some or Mikulas will bring you coal.",
-        image: "URL TO IMAGE",
+        text: "You'll need to learn some or Mikuláš will bring you coal.",
+        image: "https://images.pexels.com/photos/434556/pexels-photo-434556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         topics: [
             {
                 name: "Travel",
@@ -891,7 +891,7 @@ db.languages.insertMany([
         name: "German",
         originalName: "Deutsch ",
         text: "Gummy Bears Are A German Invention...",
-        image: "URL TO IMAGE",
+        image: "https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         topics: [
             {
                 name: "Travel",
