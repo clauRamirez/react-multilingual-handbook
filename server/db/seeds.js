@@ -7,7 +7,7 @@ db.languages.insertMany([
         name: "Spanish",
         originalName: "Español",
         text: "With 480 million native speakers, Spanish ranks as the world's No. 2 language in terms of how many people speak it as their first language!",
-        image: "https://images.pexels.com/photos/8298825/pexels-photo-8298825.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        image: "https://images.pexels.com/photos/3757144/pexels-photo-3757144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
         topics: [
             {
                 name: "Travel",

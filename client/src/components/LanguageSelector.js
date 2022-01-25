@@ -12,7 +12,7 @@ const LanguageSelector = ({allData,onClickLanguage}) => {
 
 
     return( 
-  <div className='card'>
+  <div className='country-list'>
     
     {imageNodes}
   </div> 
