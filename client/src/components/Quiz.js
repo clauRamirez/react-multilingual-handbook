@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from "react";
 
- const Quiz = () => {
-  return (
-    <div>
+const Quiz = ({quiz}) => {
+
     
-    </div>
-  );
-};
 
+    return (
+        <>
+            <p> Quiz number: {quiz.id}</p>
+        </>
+    )
+
+}
 
 export default Quiz;
