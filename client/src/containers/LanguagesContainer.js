@@ -4,6 +4,8 @@ import MainPage from '../components/LanguageMainPage';
 import LanguagesService from '../services/LanguagesServices';
 import Container from 'react-bootstrap/esm/Container';
 
+
+
 const LanguagesContainer = () => {
     
     const [allData,setAllData] = useState([])
@@ -26,18 +28,14 @@ const goMainPage = () =>{
 
   
     return (
-  <>
+  
 <Container fluid='md' className='main-container'>
         
-    <div className='lang-image-container'>   
         {!selectedLanguage ? <LanguageSelector allData={allData} onClickLanguage={onClickLanguage}/> : null}
-    </div>
-    <div className='main-page-container'> 
         {selectedLanguage ? <MainPage  selectedLanguage={selectedLanguage}/> : null }
 
-    </div>
 </Container>
-  </>
+ 
   );
 };
 

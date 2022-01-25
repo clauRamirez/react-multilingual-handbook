@@ -12,10 +12,11 @@ const LanguageSelector = ({allData,onClickLanguage}) => {
 
 
     return( 
-  <div>
+  <div className='country-list'>
     
     {imageNodes}
   </div> 
   );
 };
 export default LanguageSelector;
+
