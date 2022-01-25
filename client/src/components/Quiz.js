@@ -1,17 +1,20 @@
 import React, {useState} from "react";
+import Button from "react-bootstrap/esm/Button";
 import QuizAnswers from "./QuizAnswers";
 const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
-  const[currentScore,setCurrentScore] = useState(0) 
-  
-  
+  const [currentScore,setCurrentScore] = useState(0) 
+  const [showButton,setShowButton]  = useState(false)
+  const [resetColour,setResetColour] = useState(false)
   
   const handleClick =()=>{
       onClickNextQuiz()
-    }                   
+      setShowButton(false)
+      setResetColour(true)
+      }                     
   const currentQuizData = quiz.quiz[currentQuiz]
     
     const answersNodes = currentQuizData.answers.map((answer,index)=>{
-      return <QuizAnswers answer ={answer} key={index}/>
+      return <QuizAnswers answer ={answer} key={index} setResetColour ={setResetColour} resetColour ={resetColour} setShowButton={setShowButton}/>
     })
 
     // const handleCLick =(event)=>{
@@ -26,7 +29,7 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
             <p> Quiz number: {quiz.id}</p>
             <p>Question: {currentQuizData.question} </p>
             {answersNodes}
-            <p onClick={handleClick}>next</p>
+            {showButton ? <Button variant="primary" onClick={handleClick} >next</Button>: null}
             <p>score:{currentScore}/5</p>
         </>
     )
