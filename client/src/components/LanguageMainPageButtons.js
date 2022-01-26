@@ -9,7 +9,6 @@ const LanguageMainPageButtons = ({onClickSelect}) => {
   
 
   const handleClick = (event) => {
-    console.log(event.target)
     onClickSelect(event.target.getAttribute('data-value'))
   }
   
