@@ -12,7 +12,7 @@ db.languages.insertMany([
             {
                 name: "Travel",
                 text: "Let's get you some direcitons.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/8083429/pexels-photo-8083429.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "Could you tell me where is the nearest train/bus station?",
@@ -48,7 +48,7 @@ db.languages.insertMany([
             {
                 name: "Health",
                 text: "Better safe than sorry!",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/4906448/pexels-photo-4906448.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "Could you tell me where is the nearest hospital?",
@@ -88,7 +88,7 @@ db.languages.insertMany([
             {
                 name: "Restaurant",
                 text: "Are you ready for a dine out?",
-                image: "URL TO IMAGE",
+                image: "https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801__480.jpg",
                 phrases: [
                     {
                         phrase: "A table for four, please",
@@ -120,7 +120,7 @@ db.languages.insertMany([
             {
                 name: "Shopping",
                 text: "Because sometimes window shopping is not enough.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/7262775/pexels-photo-7262775.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "How much does it cost?",
@@ -152,7 +152,7 @@ db.languages.insertMany([
             {
                 name: "Accommodation",
                 text: "Get yourself comfy!",
-                image: "URL TO IMAGE",
+                image: "https://cdn.pixabay.com/photo/2012/11/21/10/24/building-66789_1280.jpg",
                 phrases: [
                     {
                         phrase: "Do you have a room for two nights?",
@@ -184,7 +184,7 @@ db.languages.insertMany([
             {
                 name: "Entertainment",
                 text: "It's always fun o'clocl somewhere.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/4577718/pexels-photo-4577718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "What time does the museum open?",
@@ -454,7 +454,7 @@ db.languages.insertMany([
             {
                 name: "Travel",
                 text: "Let's get you some direcitons.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/8083429/pexels-photo-8083429.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "Could you tell me where is the nearest train/bus station?",
@@ -490,7 +490,7 @@ db.languages.insertMany([
             {
                 name: "Health",
                 text: "Better safe than sorry!",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/4906448/pexels-photo-4906448.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "Could you tell me where is the nearest hospital?",
@@ -529,7 +529,7 @@ db.languages.insertMany([
             {
                 name: "Restaurant",
                 text: "Are you ready for a dine out?",
-                image: "URL TO IMAGE",
+                image: "https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801__480.jpg",
                 phrases: [
                     {
                         phrase: "A table for four, please",
@@ -561,7 +561,7 @@ db.languages.insertMany([
             {
                 name: "Shopping",
                 text: "Because sometimes window shopping is not enough.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/7262775/pexels-photo-7262775.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "How much does it cost?",
@@ -593,7 +593,7 @@ db.languages.insertMany([
             {
                 name: "Accommodation",
                 text: "Get yourself comfy!",
-                image: "URL TO IMAGE",
+                image: "https://cdn.pixabay.com/photo/2012/11/21/10/24/building-66789_1280.jpg",
                 phrases: [
                     {
                         phrase: "Do you have a room for two nights?",
@@ -625,7 +625,7 @@ db.languages.insertMany([
             {
                 name: "Entertainment",
                 text: "It's always fun o'clocl somewhere.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/4577718/pexels-photo-4577718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "What time does the museum open?",
@@ -896,7 +896,7 @@ db.languages.insertMany([
             {
                 name: "Travel",
                 text: "Let's get you some direcitons.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/8083429/pexels-photo-8083429.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "Could you tell me where is the nearest train/bus station?",
@@ -933,7 +933,7 @@ db.languages.insertMany([
             {
                 name: "Health",
                 text: "Better safe than sorry!",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/4906448/pexels-photo-4906448.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "Could you tell me where is the nearest hospital?",
@@ -972,7 +972,7 @@ db.languages.insertMany([
             {
                 name: "Restaurant",
                 text: "Are you ready for a dine out?",
-                image: "URL TO IMAGE",
+                image: "https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801__480.jpg",
                 phrases: [
                     {
                         phrase: "A table for four, please",
@@ -1004,7 +1004,7 @@ db.languages.insertMany([
             {
                 name: "Shopping",
                 text: "Because sometimes window shopping is not enough.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/7262775/pexels-photo-7262775.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "How much does it cost?",
@@ -1036,7 +1036,7 @@ db.languages.insertMany([
             {
                 name: "Accommodation",
                 text: "Get yourself comfy!",
-                image: "URL TO IMAGE",
+                image: "https://cdn.pixabay.com/photo/2012/11/21/10/24/building-66789_1280.jpg",
                 phrases: [
                     {
                         phrase: "Do you have a room for two nights?",
@@ -1068,7 +1068,7 @@ db.languages.insertMany([
             {
                 name: "Entertainment",
                 text: "It's always fun o'clocl somewhere.",
-                image: "URL TO IMAGE",
+                image: "https://images.pexels.com/photos/4577718/pexels-photo-4577718.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 phrases: [
                     {
                         phrase: "What time does the museum open?",

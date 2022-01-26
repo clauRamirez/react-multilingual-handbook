@@ -10,7 +10,7 @@ export const TopicButton = ({topic, onTopicClick}) => {
   return (
 
   <Card className='language-card' onClick={handleClick} >
-    <Card.Img  variant="top" src="https://images.pexels.com/photos/4340785/pexels-photo-4340785.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+    <Card.Img  variant="top" src={topic.image}/>
     <Card.Body >
       <Card.Text >
       {topic.name}
