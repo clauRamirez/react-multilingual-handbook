@@ -21,8 +21,12 @@ import Quiz from './Quiz';
     })
   
     return (
-    <div>
+    <div  >
+          {!selectedQuiz ? <h1>Let's choose a quiz:</h1>: null} 
+        <div className='quiz-card'>
+       
         {!selectedQuiz ? quizButtonNodes : null}
+        </div>
         {selectedQuiz ? <Quiz quiz={selectedQuiz} currentQuiz ={currentQuiz} onClickNextQuiz={onClickNextQuiz}/> : null}
         
     </div>

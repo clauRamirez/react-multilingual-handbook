@@ -13,7 +13,7 @@ const LanguageSelector = ({allData,onClickLanguage}) => {
 
     return( 
       <>
-      <h1>Let's choose the language:</h1>      
+      <h1>Let's choose a language:</h1>      
   <div className='flex-wrap'>
     
     {imageNodes}
