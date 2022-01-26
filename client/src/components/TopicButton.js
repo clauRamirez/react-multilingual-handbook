@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 
 export const TopicButton = ({topic, onTopicClick}) => {
@@ -7,9 +8,15 @@ export const TopicButton = ({topic, onTopicClick}) => {
     onTopicClick(topic)
   }
   return (
-    <div>
-    <p onClick={handleClick} >{topic.name}</p>
-    </div>
+
+  <Card className='language-card' onClick={handleClick} >
+    <Card.Img  variant="top" src={topic.image}/>
+    <Card.Body >
+      <Card.Text >
+      {topic.name}
+      </Card.Text>
+    </Card.Body>
+  </Card>
     );
 };
 
