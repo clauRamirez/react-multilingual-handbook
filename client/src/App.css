@@ -52,6 +52,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
 .phrases-container {
@@ -77,6 +78,7 @@ p {
 
 .answers-container {
   margin-top: 0.75vh;
+
 }
 
 .btn-next {
@@ -96,6 +98,7 @@ p {
     height: max-content;
     padding: 0 16px !important;
     border: transparent !important;
+
 }
 
 .quiz {
@@ -103,5 +106,17 @@ p {
 }
 
 .quiz-title {
+
+}
+
+.quiz-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
+  margin-top: 0%;
+  text-align: center;
+
+
 }
 

@@ -15,6 +15,7 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
       onClickNextQuiz
       (setShowButton(false))
       setResetColour(true)
+      setShowScore(false)
       
     }                     
   const currentQuizData = quiz.quiz[currentQuiz]
@@ -35,8 +36,9 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
             <div className="quiz quiz-title"> Quiz number: {quiz.id}</div>
             <div>Question: {currentQuizData.question} </div>
             {answersNodes}
-            {/* <div>Score:{currentScore}/24</div> */}
+           
             {showButton ? <Button variant="primary" className="btn-next" onClick={handleClick}>Next</Button>: null}
+            {showScore? <div>Score:{currentScore}/24</div>:null}
         </>
     )
 }
