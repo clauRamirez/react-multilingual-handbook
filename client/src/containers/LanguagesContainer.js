@@ -34,13 +34,13 @@ const handleHomeClick = ()=>{
  
 
 <Container fluid='md' className='main-container'>
-<button  class="btn btn-link" onClick={handleHomeClick} >Home</button>
-        
+<Button className="btn btn-white-bg" onClick={handleHomeClick} >Home</Button>         
         {!selectedLanguage ? <LanguageSelector allData={allData} onClickLanguage={onClickLanguage}/> : null}
         {selectedLanguage ? <MainPage  selectedLanguage={selectedLanguage}/> : null }
 
         
 </Container>
+
  
   );
 };

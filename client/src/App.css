@@ -13,7 +13,7 @@ p {
   min-height: 100vh;
   display: block;
   margin: 8vh auto;
-  padding: 9vh 0;
+  padding: 1.5vh 0;
   border: 1px solid #dadde1;
   border-radius: 10px;
   box-shadow: 3px 1px 12px#929191;
@@ -69,10 +69,9 @@ p {
   transition: all 1s;
 }
 
-.btn {
-  width: 100%;
-  text-align: left !important;
-}
+.btn-long {
+    width: 100%;
+    text-align: left !important;
 
 .answers-container {
   margin-top: 0.75vh;
@@ -84,9 +83,23 @@ p {
   margin-top: 1.5vh;
 }
 
+.btn-back {
+    float: right;
+}
+
+.btn-white-bg {
+    background-color: #f5f5f5de !important;
+    color: black !important;
+    box-shadow: 2px 3px 10px #929191;
+    height: max-content;
+    padding: 0 16px !important;
+    border: transparent !important;
+}
+
 .quiz {
   text-align: center;
 }
 
 .quiz-title {
 }
+
