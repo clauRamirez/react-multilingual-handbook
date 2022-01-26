@@ -80,8 +80,16 @@ const answersDisabled =()=>{return( <Button
     
     return (
         <div className="answers-container">
-            {allClickable ? answersDisabled() :null}
-            {!allClickable ? answersToggle():null}
+            <Button
+   className = 'btn-long'
+
+   variant={colour}
+   onClick={handleClick}
+   value={answer.isCorrect}    
+   disabled = {clickable}
+   >
+   {answer.text}
+   </Button>
             {showConfetti ? confetti : null }
         </div>
     );
