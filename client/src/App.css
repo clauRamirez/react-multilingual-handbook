@@ -23,47 +23,54 @@
 }
 
 .card:hover {
-    box-shadow: 10px 5px 10px rgba(66, 89, 122, 0.363);
-    transition: all 1s;
+  box-shadow: 10px 5px 10px rgba(66, 89, 122, 0.363);
+  transition: all 1s;
 }
 
 .card-img-top {
-
   border-radius: 5px !important;
   height: 100px;
   object-fit: cover;
 }
 
 .card-body {
-    border-radius: 5px;
-    text-align: center;
-    background-color: whitesmoke;
+  border-radius: 5px;
+  text-align: center;
+  background-color: whitesmoke;
 }
 .flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .btn {
-    width: 100%;
-    text-align: left !important;
+  width: 100%;
+  text-align: left !important;
 }
 
 .answers-container {
-    margin-top: 0.75vh;
+  margin-top: 0.75vh;
 }
 
-.btn-next { 
-    width: max-content;
-    margin-left: 45%;
-    margin-top: 1.5vh;
+.btn-next {
+  width: max-content;
+  margin-left: 45%;
+  margin-top: 1.5vh;
 }
 
 .quiz {
-    text-align: center;
+  text-align: center;
 }
 
 .quiz-title {
+}
 
+.quiz-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
+  margin-top: 0%;
+  text-align: center;
 }
