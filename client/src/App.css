@@ -1,4 +1,14 @@
+h1 {
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 2vh;
+}
+h5,
+p {
+  text-shadow: 1px 1px 2px #ebebeb;
+}
 .App {
+  font-family: "EB Garamond", serif;
   max-width: 60vw;
   min-height: 100vh;
   display: block;
@@ -23,41 +33,54 @@
 }
 
 .card:hover {
-    box-shadow: 10px 5px 10px rgba(66, 89, 122, 0.363);
-    transition: all 1s;
+  box-shadow: 10px 5px 10px rgba(66, 89, 122, 0.363);
+  transition: all 1s;
 }
 
 .card-img-top {
-
   border-radius: 5px !important;
   height: 100px;
   object-fit: cover;
 }
 
 .card-body {
-    border-radius: 5px;
-    text-align: center;
-    background-color: whitesmoke;
+  border-radius: 5px;
+  text-align: center;
+  background-color: whitesmoke;
 }
 .flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.phrases-container {
+  text-align: center;
+  font-size: 4vh;
+  background: #f8f9fa85;
+  border-radius: 6px;
+  box-shadow: 15px 10px 12px#929191;
+  margin-bottom: 4vh;
+  padding-bottom: 2vh;
+}
+
+.phrases-container:hover {
+  box-shadow: 10px 5px 10px rgba(90, 110, 138, 0.363);
+  transition: all 1s;
 }
 
 .btn-long {
     width: 100%;
     text-align: left !important;
-}
 
 .answers-container {
-    margin-top: 0.75vh;
+  margin-top: 0.75vh;
 }
 
-.btn-next { 
-    width: max-content;
-    margin-left: 45%;
-    margin-top: 1.5vh;
+.btn-next {
+  width: max-content;
+  margin-left: 45%;
+  margin-top: 1.5vh;
 }
 
 .btn-back {
@@ -74,10 +97,9 @@
 }
 
 .quiz {
-    text-align: center;
+  text-align: center;
 }
 
 .quiz-title {
-
 }
 

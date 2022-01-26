@@ -4,9 +4,11 @@ import Card from 'react-bootstrap/Card';
 const Topic = ({topic}) => {
     const phrasesNodes = topic.phrases.map(phrase=>{
         return (<>
+        <div className='phrases-container'>
             <p>{phrase.phrase}</p>
-            <p>{phrase.translation}</p>
-            <p>{phrase.audio}</p>
+            <h5>{phrase.translation}</h5>
+            </div>
+            {/* <p>{phrase.audio}</p> */}
         </>)
     });
 
