@@ -32,11 +32,11 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
     
     return (
         <>
-            <p> Quiz number: {quiz.id}</p>
-            <p>Question: {currentQuizData.question} </p>
+            <div className="quiz quiz-title"> Quiz number: {quiz.id}</div>
+            <div>Question: {currentQuizData.question} </div>
             {answersNodes}
-            {showButton ? <Button variant="primary" onClick={handleClick}>next</Button>: null}
-            <p>score:{currentScore}/24</p>
+            {/* <div>Score:{currentScore}/24</div> */}
+            {showButton ? <Button variant="primary" className="btn-next" onClick={handleClick}>Next</Button>: null}
         </>
     )
 }
