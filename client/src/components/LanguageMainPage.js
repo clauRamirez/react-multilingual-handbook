@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import LanguageMainPageButtons from './LanguageMainPageButtons';
 import QuizList from './QuizList';
 import TopicsList from './TopicsList';
-
+import Button from 'react-bootstrap/Button'
 
 const MainPage = ({selectedLanguage}) => {
 
         const [selectedComponent,setSelectedComponent] = useState(null)
-
+        
         const onClickSelect =(value) =>{
             setSelectedComponent(value)
         }
-
         const onClickBack = (event) => {
             setSelectedComponent(event.target.value)
         }
@@ -20,7 +19,7 @@ const MainPage = ({selectedLanguage}) => {
         return (
         <div className='home-page-container'>
     
-        <button value={null} onClick={onClickBack}></button>
+        {selectedComponent ? <Button  value={null} onClick={onClickBack} >Back</Button>: null}
         {!selectedComponent ? <LanguageMainPageButtons onClickSelect={onClickSelect}/> : null}
         {selectedComponent === "quiz" ? <QuizList quizzes ={selectedLanguage.quizzes}/> : null }
         {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
