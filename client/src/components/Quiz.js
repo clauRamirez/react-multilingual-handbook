@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Button from "react-bootstrap/esm/Button";
 import QuizAnswers from "./QuizAnswers";
 const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
+  
   const [currentScore,setCurrentScore] = useState(12) 
   const [showButton,setShowButton]  = useState(false)
   const [resetColour,setResetColour] = useState(false)
