@@ -14,7 +14,11 @@ const QuizAnswers = ({ answer,resetColour,setShowButton,setResetColour,currentQu
     const confetti =<Confetti width={width} height={height} />
     
    
-   const answersToggle = ()=>{return( <Button
+
+
+   const button =()=>{return( <Button
+   className = 'btn-long'
+
    variant={colour}
    onClick={handleClick}
    value={answer.isCorrect}    

@@ -17,13 +17,16 @@ const MainPage = ({selectedLanguage}) => {
         
         
         return (
+            <>
+
+        {selectedComponent ? <Button className="btn-white-bg btn-back"  value={null} onClick={onClickBack} >Back</Button>: null}
         <div className='home-page-container'>
     
-        {selectedComponent ? <Button  value={null} onClick={onClickBack} >Back</Button>: null}
         {!selectedComponent ? <LanguageMainPageButtons onClickSelect={onClickSelect}/> : null}
         {selectedComponent === "quiz" ? <QuizList quizzes ={selectedLanguage.quizzes}/> : null }
         {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
          </div>
+            </>
     );
 };
 

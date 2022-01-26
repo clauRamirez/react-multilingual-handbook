@@ -1,9 +1,19 @@
+h1 {
+  text-align: center;
+  font-size: larger;
+  padding-bottom: 2vh;
+}
+h5,
+p {
+  text-shadow: 1px 1px 2px #ebebeb;
+}
 .App {
+  font-family: "EB Garamond", serif;
   max-width: 60vw;
   min-height: 100vh;
   display: block;
   margin: 8vh auto;
-  padding: 9vh 0;
+  padding: 1.5vh 0;
   border: 1px solid #dadde1;
   border-radius: 10px;
   box-shadow: 3px 1px 12px#929191;
@@ -42,15 +52,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
 }
 
-.btn {
-  width: 100%;
-  text-align: left !important;
+.phrases-container {
+  text-align: center;
+  font-size: 4vh;
+  background: #f8f9fa85;
+  border-radius: 6px;
+  box-shadow: 15px 10px 12px#929191;
+  margin-bottom: 4vh;
+  padding-bottom: 2vh;
+}
+
+.phrases-container:hover {
+  box-shadow: 10px 5px 10px rgba(90, 110, 138, 0.363);
+  transition: all 1s;
+}
+
+.btn-long {
+    width: 100%;
+    text-align: left !important;
+
 }
 
 .answers-container {
   margin-top: 0.75vh;
+
 }
 
 .btn-next {
@@ -59,11 +87,26 @@
   margin-top: 1.5vh;
 }
 
+.btn-back {
+    float: right;
+}
+
+.btn-white-bg {
+    background-color: #f5f5f5de !important;
+    color: black !important;
+    box-shadow: 2px 3px 10px #929191;
+    height: max-content;
+    padding: 0 16px !important;
+    border: transparent !important;
+
+}
+
 .quiz {
   text-align: center;
 }
 
 .quiz-title {
+
 }
 
 .quiz-card {
@@ -73,4 +116,7 @@
   width: 57%;
   margin-top: 0%;
   text-align: center;
+
+
 }
+
