@@ -1,11 +1,29 @@
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
 
 const QuizAnswers = ({ answer,resetColour,setShowButton,setResetColour,currentQuiz,setShowScore,setCurrentScore,currentScore}) => {
    
     const [colour, setColour] = useState("primary");
     const [clickable,setClickable] = useState(false)
+    const [showConfetti,setShowConfetti] = useState(null)
+    const { width, height } = useWindowSize()
+    const confetti =<Confetti width={width} height={height} />
+    
+   
+   const button =()=>{return( <Button
+   variant={colour}
+   onClick={handleClick}
+   value={answer.isCorrect}    
+   disabled={clickable}     
+   >
+   {answer.text}
+   </Button>)}
 
+
+
+      
     useEffect(() => {
         setColour("primary")
         setResetColour(false)
@@ -18,6 +36,8 @@ const QuizAnswers = ({ answer,resetColour,setShowButton,setResetColour,currentQu
             if(event.target.value === "true") {
                 setColour("success");
                 setCurrentScore(currentScore + 3)
+                setShowScore(true)
+                setShowConfetti(true)
                 
 
             } else if (event.target.value === "false") {
@@ -41,17 +61,11 @@ const QuizAnswers = ({ answer,resetColour,setShowButton,setResetColour,currentQu
     };
 
     
-
+    
     return (
         <div className="answers-container">
-            <Button
-                variant={colour}
-                onClick={handleClick}
-                value={answer.isCorrect}    
-                disabled={clickable}     
-            >
-                {answer.text}
-            </Button>
+            {button()}
+            {showConfetti ? confetti : null }
         </div>
     );
 };

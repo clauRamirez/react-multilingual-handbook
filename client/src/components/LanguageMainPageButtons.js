@@ -14,10 +14,13 @@ const LanguageMainPageButtons = ({onClickSelect}) => {
   
 
   return (
+    <>
+    <h1>Let's start: </h1>
+    
 <div className="flex-wrap">
 
   <Card className='language-card' onClick={handleClick} >
-    <Card.Img data-value="topics" variant="top" src="https://images.pexels.com/photos/4778412/pexels-photo-4778412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+    <Card.Img data-value="topics" variant="top" src="https://images.pexels.com/photos/4340785/pexels-photo-4340785.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
     <Card.Body data-value="topics">
       <Card.Text data-value="topics">
       Topics
@@ -26,7 +29,7 @@ const LanguageMainPageButtons = ({onClickSelect}) => {
   </Card>
 
   <Card className='language-card' onClick={handleClick} >
-    <Card.Img data-value="quiz" variant="top" src="https://images.pexels.com/photos/4778412/pexels-photo-4778412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+    <Card.Img data-value="quiz" variant="top" src="https://images.pexels.com/photos/267705/pexels-photo-267705.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
     <Card.Body data-value="quiz">
       <Card.Text data-value="quiz">
       Quizzes
@@ -36,7 +39,7 @@ const LanguageMainPageButtons = ({onClickSelect}) => {
 
 </div>
 
-
+</>
 
 
 

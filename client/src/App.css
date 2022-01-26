@@ -1,40 +1,39 @@
 .App {
-    max-width: 60vw;
-    min-height: 100vh;
-    display: block;
-    margin: 8vh auto;
-    padding: 9vh 0;
-    border: 1px solid #dadde1;
-    border-radius: 10px;
-    box-shadow: 3px 1px 12px#929191;
-    background: url("backgroundPic.jpg");
-    /* background-attachment: fixed; */
-    background-position: 50% bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
+  max-width: 60vw;
+  min-height: 100vh;
+  display: block;
+  margin: 8vh auto;
+  padding: 9vh 0;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  box-shadow: 3px 1px 12px#929191;
+  background: url("backgroundPic.jpg");
+  background-position: 50% bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card {
-    border-radius: 5px !important;
-    width: 34%;
-    /* max-width: 17vw;x */
-    /* min-height: 7vh; */
-    border: none !important;
-    background-color: transparent !important;
-    margin-bottom: 5vh;
-    box-shadow: 15px 10px 12px#929191;
+  border-radius: 5px !important;
+  width: 34%;
+  border: none !important;
+  background-color: transparent !important;
+  margin-bottom: 5vh;
+  box-shadow: 15px 10px 12px#929191;
 }
+
 .card:hover {
     box-shadow: 10px 5px 10px rgba(66, 89, 122, 0.363);
     transition: all 1s;
 }
 
 .card-img-top {
-    border-radius: 5px !important;
-    height: 100px;
-    /* width: 668px !important; */
-    object-fit: cover;
+
+  border-radius: 5px !important;
+  height: 100px;
+  object-fit: cover;
 }
+
 .card-body {
     border-radius: 5px;
     text-align: center;
