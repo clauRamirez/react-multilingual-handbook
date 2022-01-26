@@ -24,8 +24,7 @@ const MainPage = ({selectedLanguage}) => {
         {!selectedComponent ? <LanguageMainPageButtons onClickSelect={onClickSelect}/> : null}
         {selectedComponent === "quiz" ? <QuizList quizzes ={selectedLanguage.quizzes}/> : null }
         {selectedComponent === "topics" ? <TopicsList topics = {selectedLanguage.topics}/> : null }
-                
-        </div>
+         </div>
     );
 };
 

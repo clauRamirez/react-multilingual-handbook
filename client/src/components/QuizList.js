@@ -18,7 +18,7 @@ import Quiz from './Quiz';
 
 
 const quizButtonNodes = quizzes.map((quiz, index) => {
-        return <QuizButton key={index} quiz = {quiz} onQuizClick={onQuizClick} />
+        return <QuizButton key={index} quiz = {quiz} onQuizClick={onQuizClick}  />
 
     })
 
