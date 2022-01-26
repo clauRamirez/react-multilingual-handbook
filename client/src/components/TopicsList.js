@@ -15,11 +15,16 @@ const topicButtonNodes = topics.map((topic, index) => {
     })
 
   return (
-    <div>
+    <>
+    {!selectedTopic ? <h1>Choose a topic: </h1> : null}
+
+    <div className='flex-wrap'>
+
         {!selectedTopic ? topicButtonNodes : null}
         {selectedTopic ? <Topic topic={selectedTopic} /> : null}
 
     </div>
+    </>
   );
 };
 
