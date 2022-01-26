@@ -32,8 +32,8 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
     
     return (
         <>
-            <div className="quiz quiz-title"> Quiz number: {quiz.id}</div>
-            <div>Question: {currentQuizData.question} </div>
+            <div className="quiz quiz-title"> <h3>Quiz {quiz.id}</h3> </div>
+            <div className="question-container"><h4> {currentQuizData.question} </h4></div>
             {answersNodes}
             {/* <div>Score:{currentScore}/24</div> */}
             {showButton ? <Button variant="primary" className="btn-next" onClick={handleClick}>Next</Button>: null}
