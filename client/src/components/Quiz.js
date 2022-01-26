@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState} from "react";
 import Button from "react-bootstrap/esm/Button";
 import QuizAnswers from "./QuizAnswers";
@@ -39,5 +40,17 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
         </>
     )
 }
+=======
+import React from 'react';
+
+ const Quiz = () => {
+  return (
+    <div>
+    
+    </div>
+  );
+};
+
+>>>>>>> 8e29c644edeb2248469459ae3305a693b9a702ce
 
 export default Quiz;
