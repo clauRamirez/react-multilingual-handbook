@@ -21,9 +21,9 @@ const topicButtonNodes = topics.map((topic, index) => {
     <div className='flex-wrap'>
 
         {!selectedTopic ? topicButtonNodes : null}
-        {selectedTopic ? <Topic topic={selectedTopic} /> : null}
 
     </div>
+        {selectedTopic ? <Topic topic={selectedTopic} /> : null}
     </>
   );
 };
