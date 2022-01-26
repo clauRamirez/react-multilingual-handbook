@@ -9,7 +9,7 @@ export const QuizButton = ({quiz, onQuizClick}) => {
   return (
            
     <Card className='quiz-card language-card ' onClick={handleClick} >
-    <Card.Img  variant="top" src={"https://bba-girona.org/wp-content/uploads/2017/03/quiz-2074324_1280.png"}/>
+    <Card.Img className="card-border" variant="top" src={"https://bba-girona.org/wp-content/uploads/2017/03/quiz-2074324_1280.png"}/>
     <Card.Body >
       <Card.Text >
      <div className='quiz-under-title'> Quiz {quiz.id}</div>
