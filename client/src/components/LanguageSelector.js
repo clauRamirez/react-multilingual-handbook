@@ -12,10 +12,11 @@ const LanguageSelector = ({allData,onClickLanguage}) => {
 
 
     return( 
-  <div>
+  <div className='flex-wrap'>
     
     {imageNodes}
   </div>
   );
 };
 export default LanguageSelector;
+

@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 export const LanguageImages = ({languageData,onClickLanguage}) => {
   
@@ -7,9 +8,20 @@ export const LanguageImages = ({languageData,onClickLanguage}) => {
     }
     
     return (
-      <div>
-           <img onClick={handleClick} className='img' src={languageData.image}  alt= "Movie Poster"/>
-      </div>
+      
+
+  <Card className='language-card' onClick={handleClick}>
+    <Card.Img variant="top" src={languageData.image}  />
+    <Card.Body>
+      <Card.Text>
+      {languageData.name}
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  
+      
+         
+      
   )
 };
 
