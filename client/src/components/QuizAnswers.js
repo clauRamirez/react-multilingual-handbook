@@ -13,6 +13,7 @@ const QuizAnswers = ({ answer,resetColour,setShowButton,setResetColour,currentQu
     
    
    const button =()=>{return( <Button
+   className="btn-long"
    variant={colour}
    onClick={handleClick}
    value={answer.isCorrect}    
