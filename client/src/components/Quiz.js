@@ -24,13 +24,6 @@ const Quiz = ({quiz,currentQuiz,onClickNextQuiz}) => {
       return <QuizAnswers answer ={answer} key={index} setResetColour ={setResetColour} resetColour ={resetColour} setShowButton={setShowButton} currentQuiz={currentQuiz} setCurrentScore={setCurrentScore} currentScore ={currentScore} setShowScore ={setShowScore}/>
     })
 
-    // const handleCLick =(event)=>{
-    //   if(event.target.value == true){
-    //       setCurrentScore(score)         
-
-      
-  
-    
     return (
         <>
             <div className="quiz quiz-title"> <h3>Quiz {quiz.id}</h3> </div>

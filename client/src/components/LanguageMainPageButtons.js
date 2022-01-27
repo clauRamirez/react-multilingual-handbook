@@ -41,18 +41,6 @@ const LanguageMainPageButtons = ({onClickSelect}) => {
 
 </>
 
-
-
-      // <Container>
-      // <Row>
-      // <Col>
-      //   <button value="topics" onClick={handleClick}>Topics</button>
-      //  </Col>
-      //  <Col>
-      //   <button value="quiz" onClick={handleClick} >Quizz</button>
-      // </Col>
-      // </Row>
-      // </Container>
   )
 };
 

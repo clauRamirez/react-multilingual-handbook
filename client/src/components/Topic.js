@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 
 const Topic = ({topic}) => {
     const phrasesNodes = topic.phrases.map(phrase=>{
@@ -12,20 +11,7 @@ const Topic = ({topic}) => {
         </>)
     });
 
-    return(
-//        <> <h1>{topic.name}</h1>
-//     <Card className='language-card'>
-//     <Card.Img variant="top" src={phrasesNodes} />
-//     <Card.Body>
-//       <Card.Text>
-//       {phrasesNodes}
-//       </Card.Text>
-//     </Card.Body>
-//   </Card>
-//         </>
-
-
-        
+    return(        
         <>
         <h1>{topic.name}</h1>
         {phrasesNodes}
