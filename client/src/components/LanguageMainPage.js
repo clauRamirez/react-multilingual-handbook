@@ -2,14 +2,9 @@ import React, { useState } from "react";
 import LanguageMainPageButtons from "./LanguageMainPageButtons";
 import QuizList from "./QuizList";
 import TopicsList from "./TopicsList";
+import Button from "react-bootstrap/Button";
 
 const MainPage = ({ selectedLanguage }) => {
-    const [selectedComponent, setSelectedComponent] = useState(null);
-
-    const onClickSelect = (value) => {
-        setSelectedComponent(value);
-    };
-
     const [selectedComponent, setSelectedComponent] = useState(null);
 
     const onClickSelect = (value) => {
