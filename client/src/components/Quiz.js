@@ -29,10 +29,6 @@ const Quiz = ({ quiz, currentQuiz, onClickNextQuiz }) => {
         );
     });
 
-    // const handleCLick =(event)=>{
-    //   if(event.target.value == true){
-    //       setCurrentScore(score)
-
     return (
         <>
             <p> Quiz number: {quiz.id}</p>

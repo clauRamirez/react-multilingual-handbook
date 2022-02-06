@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-export const TopicButton = ({topic, onTopicClick}) => {
-
-  const handleClick = () => {
-    onTopicClick(topic)
-  }
-  return (
-    <div>
-    <p onClick={handleClick} >{topic.name}</p>
-    </div>
+export const TopicButton = ({ topic, onTopicClick }) => {
+    const handleClick = () => {
+        onTopicClick(topic);
+    };
+    return (
+        <div>
+            <p onClick={handleClick}>{topic.name}</p>
+        </div>
     );
 };
 

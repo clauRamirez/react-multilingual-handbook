@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import LanguageMainPageButtons from "./LanguageMainPageButtons";
-import Quiz from "./Quiz";
 import QuizList from "./QuizList";
 import TopicsList from "./TopicsList";
 
