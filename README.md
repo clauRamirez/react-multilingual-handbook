@@ -1,6 +1,5 @@
 1. [Project brief](https://github.com/clauRamirez/flask-inventory-manager#1-project-brief)
 2. [Demo](https://github.com/clauRamirez/flask-inventory-manager#2-demo)
-3. [TO-DO](https://github.com/clauRamirez/flask-inventory-manager#3-to-do)
 
 ## Overview
 
