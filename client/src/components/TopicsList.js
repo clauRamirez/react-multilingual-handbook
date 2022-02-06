@@ -20,10 +20,14 @@ const TopicsList = ({ topics }) => {
     });
 
     return (
-        <div>
-            {!selectedTopic ? topicButtonNodes : null}
+        <>
+            {!selectedTopic ? <h1>Choose a topic: </h1> : null}
+
+            <div className="flex-wrap">
+                {!selectedTopic ? topicButtonNodes : null}
+            </div>
             {selectedTopic ? <Topic topic={selectedTopic} /> : null}
-        </div>
+        </>
     );
 };
 

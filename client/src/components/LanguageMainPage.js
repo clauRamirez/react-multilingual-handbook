@@ -10,23 +10,38 @@ const MainPage = ({ selectedLanguage }) => {
         setSelectedComponent(value);
     };
 
+    const [selectedComponent, setSelectedComponent] = useState(null);
+
+    const onClickSelect = (value) => {
+        setSelectedComponent(value);
+    };
     const onClickBack = (event) => {
         setSelectedComponent(event.target.value);
     };
 
     return (
-        <div className="home-page-container">
-            <button value={null} onClick={onClickBack}></button>
-            {!selectedComponent ? (
-                <LanguageMainPageButtons onClickSelect={onClickSelect} />
+        <>
+            {selectedComponent ? (
+                <Button
+                    className="btn-white-bg btn-back"
+                    value={null}
+                    onClick={onClickBack}
+                >
+                    Back
+                </Button>
             ) : null}
-            {selectedComponent === "quiz" ? (
-                <QuizList quizzes={selectedLanguage.quizzes} />
-            ) : null}
-            {selectedComponent === "topics" ? (
-                <TopicsList topics={selectedLanguage.topics} />
-            ) : null}
-        </div>
+            <div className="home-page-container">
+                {!selectedComponent ? (
+                    <LanguageMainPageButtons onClickSelect={onClickSelect} />
+                ) : null}
+                {selectedComponent === "quiz" ? (
+                    <QuizList quizzes={selectedLanguage.quizzes} />
+                ) : null}
+                {selectedComponent === "topics" ? (
+                    <TopicsList topics={selectedLanguage.topics} />
+                ) : null}
+            </div>
+        </>
     );
 };
 

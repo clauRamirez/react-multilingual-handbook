@@ -10,6 +10,7 @@ const Quiz = ({ quiz, currentQuiz, onClickNextQuiz }) => {
     const handleClick = () => {
         onClickNextQuiz(setShowButton(false));
         setResetColour(true);
+        setShowScore(false);
     };
     const currentQuizData = quiz.quiz[currentQuiz];
 
@@ -31,15 +32,29 @@ const Quiz = ({ quiz, currentQuiz, onClickNextQuiz }) => {
 
     return (
         <>
-            <p> Quiz number: {quiz.id}</p>
-            <p>Question: {currentQuizData.question} </p>
+            <div className="quiz quiz-title">
+                {" "}
+                <h3>Quiz {quiz.id}</h3>{" "}
+            </div>
+            <div className="question-container">
+                <h4> {currentQuizData.question} </h4>
+            </div>
             {answersNodes}
+
             {showButton ? (
-                <Button variant="primary" onClick={handleClick}>
-                    next
+                <Button
+                    variant="primary"
+                    className="btn-next"
+                    onClick={handleClick}
+                >
+                    Next
                 </Button>
             ) : null}
-            <p>score:{currentScore}/24</p>
+            {showScore ? (
+                <div className="score-container">
+                    <h4>SCORE:{currentScore}/24</h4>{" "}
+                </div>
+            ) : null}
         </>
     );
 };

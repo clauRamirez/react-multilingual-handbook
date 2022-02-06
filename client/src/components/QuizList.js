@@ -10,7 +10,6 @@ const QuizList = ({ quizzes }) => {
     const onQuizClick = (quiz) => {
         setSelectedQuiz(quiz);
     };
-
     const onClickNextQuiz = () => {
         setCurrentQuiz(currentQuiz + 1);
     };
@@ -21,7 +20,10 @@ const QuizList = ({ quizzes }) => {
 
     return (
         <div>
-            {!selectedQuiz ? quizButtonNodes : null}
+            {!selectedQuiz ? <h1>Let's choose a quiz:</h1> : null}
+            <div className="quiz-card">
+                {!selectedQuiz ? quizButtonNodes : null}
+            </div>
             {selectedQuiz ? (
                 <Quiz
                     quiz={selectedQuiz}

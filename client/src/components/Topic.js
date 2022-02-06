@@ -4,16 +4,17 @@ const Topic = ({ topic }) => {
     const phrasesNodes = topic.phrases.map((phrase) => {
         return (
             <>
-                <p>{phrase.phrase}</p>
-                <p>{phrase.translation}</p>
-                <p>{phrase.audio}</p>
+                <div className="phrases-container">
+                    <p>{phrase.phrase}</p>
+                    <h5>{phrase.translation}</h5>
+                </div>
             </>
         );
     });
 
     return (
         <>
-            <p>{topic.name}</p>
+            <h1>{topic.name}</h1>
             {phrasesNodes}
         </>
     );
