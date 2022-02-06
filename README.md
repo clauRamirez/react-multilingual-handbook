@@ -37,7 +37,7 @@ git clone https://github.com/clauRamirez/react-multilingual-handbook
 ```
 2. Go to project directory:
 ```
-cd /path/to/project/src
+cd ./react-multilingual-handbook
 ```
 3. Run setup script:
 ```
