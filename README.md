@@ -33,7 +33,7 @@ To run a demo locally, in your terminal:
 - Node.js. Click [here](https://nodejs.org/en/download/) to install.
 1. Clone the repository
 ```
-git clone https://github.com/clauRamirez/react-multilingual-handbook
+git clone https://github.com/clauRamirez/react-multilingual-handbook.git
 ```
 2. Go to project directory:
 ```
